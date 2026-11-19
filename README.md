@@ -1,4 +1,4 @@
-# Travel Tracker — Node.js 22 + Netlify
+# Travel Tracker 
 
 ## What changed
 - Keeps Express 4 and EJS.
