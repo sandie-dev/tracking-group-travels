@@ -2,13 +2,11 @@ import express from "express";
 import pg from "pg";
 import dotenv from "dotenv";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { createHmac, timingSafeEqual } from "node:crypto";
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = process.cwd();
 
 const app = express();
 const { Pool } = pg;
