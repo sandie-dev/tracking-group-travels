@@ -7,6 +7,8 @@
   node_bundler = "esbuild"
   external_node_modules = ["express", "pg", "ejs"]
 
+[functions."api"]
+  included_files = ["views/**"]
 # Send the app's dynamic pages through the Express Netlify Function.
 [[redirects]]
   from = "/"
